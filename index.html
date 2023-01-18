@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="bones.css" />
+  </head>
+
+  <body>
+    <main>
+      <h1>Income taxes in Sg</h1>
+      <p>
+        Enter your annual salary and you'll get your annual taxes you have to
+        pay
+      </p>
+      <form class="salary-form">
+        <label>
+          <span>Annual Salary</span>
+          <input
+            type="number"
+            placeholder="123,456"
+            class="salary-input"
+            required
+          />
+          <span class="salary-input-error">Must be a positive number</span>
+        </label>
+        <button type="submit" class="salary-submit">Calculate</button>
+      </form>
+      <hr />
+      <h2>
+        Total taxes to pay: <span class="tax-amount is-low">10000 SGD</span>
+      </h2>
+      <h3>
+        Overall percentage: <span class="tax-percentage is-high">10.5%</span>
+      </h3>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
